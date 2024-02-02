@@ -6,34 +6,46 @@ dove N è un numero indicato dall’utente.
 
 */
 
-const input = prompt("inserisci numero");
-const array = []
+const buttonGo = document.getElementById("button");
 
-
-for (i=1; i<input; i++){
-    for (i=1; i<=input; i++){
-      cube =  Math.pow([i],3)
+buttonGo.addEventListener("click",
+function(){
     
-        array.push(cube);
+    const input = document.getElementById("input").value;
+    const array = []
+    
+    
+    for (i=1; i<input; i++){
+        for (i=1; i<=input; i++){
+          cube =  Math.pow([i],3)
+        
+            array.push(cube);
+        }
+       
+    };
+    
+    
+    
+    
+    
+    if (input < 0){
+        for (i=input; i<0; i++){
+            cube =  Math.pow([i],3);
+        
+            array.push(cube);
+        
+        }
     }
-   
-
-};
-
-
-
-
-if (input < 0){
-    for (i=input; i<0; i++){
-        cube =  Math.pow([i],3);
     
-        array.push(cube);
     
-    }
+    document.getElementById("result").innerText = array
+
+
 }
 
 
-document.getElementById("result").innerText = array
+)
+
 
 
 
