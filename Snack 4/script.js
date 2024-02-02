@@ -8,7 +8,7 @@ e calcola la somma di tutte le cifre che compongono il numero.
 
 
 
-const input = Number(prompt(""));
+const input = Number(prompt("Inserisci un numero"));
 
 let stringNumb = input.toString();
 
