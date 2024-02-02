@@ -1,17 +1,33 @@
 body{
     font-family: sans-serif;
 }
+.container{
+    max-width: 300px;
+    margin-inline: auto;
+    margin-top: 50px;
+}
 
 #array{
     padding: 1em;
 
+}
 
+.form{
+    padding: 1em;
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: aqua;
+    border-radius: 10px;
 }
 
 #result{
-    margin-top: 5px;
+    text-align: center;
+    margin-top: 10px;
     padding: 1em;
     color: red;
     font-weight: bold;
     text-transform: uppercase;
+    background-color: lightgrey;
+    border-radius: 10px;
+
 }

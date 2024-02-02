@@ -1,15 +1,36 @@
-
+.container{
+    max-width: 300px;
+    margin-inline: auto;
+    margin-top: 50px;
+}
 body{
     font-family: sans-serif;
 }
 .form{
+    padding: 1em;
+    text-align: center;
     margin-bottom: 10px;
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+#button{
+    display: block;
+    margin-inline: auto;
+}
+
+
+input{
+    margin-top:  10px;
 }
 
 #result{
+    text-align: center;
     margin-top: 10px;
     padding: 1em;
     color: red;
     font-weight: bold;
     text-transform: uppercase;
+    border-radius: 10px;
+
 }

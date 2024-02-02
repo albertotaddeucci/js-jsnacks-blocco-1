@@ -23,7 +23,7 @@ function(){
     }
     
     
-    document.getElementById("result").innerText = sum
+    document.getElementById("result").innerText = `Somma delle cifre pari a ${sum}`;
 
 })
 

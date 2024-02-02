@@ -6,10 +6,32 @@ body{
 #list{
     margin-top: 20px;
 }
+
+
+
+.container{
+    max-width: 300px;
+    margin-inline: auto;
+    margin-top: 50px;
+}
+
+.form{
+    padding: 1em;
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+
 #result{
+    text-align: center;
     margin-top: 10px;
     padding: 1em;
     color: red;
     font-weight: bold;
     text-transform: uppercase;
+    border-radius: 10px;
+    background-color: lightgrey;
+
 }
