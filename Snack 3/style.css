@@ -1,0 +1,17 @@
+body{
+    font-family: sans-serif;
+}
+
+#array{
+    padding: 1em;
+
+
+}
+
+#result{
+    margin-top: 5px;
+    padding: 1em;
+    color: red;
+    font-weight: bold;
+    text-transform: uppercase;
+}

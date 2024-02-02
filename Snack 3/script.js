@@ -8,16 +8,25 @@ Stampa a schermo il contenuto dell'array
 */
 
 const array = [];
+const array2 = []
 
 for (i=0; i<6; i++){
     
     const input =  Number(prompt("inserisci numero"));
 
     if (input%2 != 0){
-        array.push(input),
+        array.push(input);
 
-        document.getElementById("result").innerText = array;
+        document.getElementById("result").innerText = `Numeri dispari inseriti:${array}`;
+    } else {
+        array2.push(input);
+
+
     }
+
+    document.getElementById("array").innerText = `Totale numeri inseriti ${array},${array2}`
+
+
 
 }
 

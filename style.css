@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.container{
+    margin-top: 50px;
+    margin-inline: auto;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container div{   
+    padding: 1em;
+    background-color: aqua;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+
+}
