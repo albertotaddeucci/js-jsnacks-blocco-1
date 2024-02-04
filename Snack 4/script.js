@@ -12,7 +12,7 @@ function(){
 
     const input = Number(document.getElementById("input").value);
 
-    
+        
     let stringNumb = input.toString();
     
     let sum = 0;
@@ -22,8 +22,14 @@ function(){
     
     }
     
+    if (stringNumb.length != 4){
+     document.getElementById("result").innerText = `Devi inserire un numero di 4 cifre!`;
+
+    } else{
+        document.getElementById("result").innerText = `Somma delle cifre pari a ${sum}`;
+    }
     
-    document.getElementById("result").innerText = `Somma delle cifre pari a ${sum}`;
+
 
 })
 

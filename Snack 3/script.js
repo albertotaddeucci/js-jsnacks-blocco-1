@@ -8,27 +8,37 @@ Stampa a schermo il contenuto dell'array
 */
 
 const array = [];
-const array2 = []
+const array2 = [];
+const array3 = [];
 
 for (i=0; i<6; i++){
     
     const input =  Number(prompt("inserisci numero"));
 
-    if (input%2 != 0){
+    if (isNaN(input) ){
+        array3.push(input);
+        
+    } else if (input%2 != 0){
         array.push(input);
-
-        document.getElementById("result").innerText = `Numeri dispari inseriti:${array}`;
+        
     } else {
         array2.push(input);
-
-
+        
     }
-
-    document.getElementById("array").innerText = `Totale numeri inseriti ${array},${array2}`
-
 
 
 }
+
+if (array3.length>0){
+    document.getElementById("array").innerHTML = `<b>Attenzione</b>: Non hai inserito ${6 - array.length - array2.length} numeri`;
+    document.getElementById("result").innerText = `Numeri dispari inseriti: ${array}`;
+    
+} else {
+    document.getElementById("array").innerText = `Tutti i numeri inseriti ${array},${array2}`;        
+    document.getElementById("result").innerText = `Numeri dispari inseriti: ${array}`;
+
+}
+
 
 
 

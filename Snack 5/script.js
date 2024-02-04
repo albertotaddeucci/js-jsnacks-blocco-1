@@ -13,32 +13,21 @@ function(){
     
     const input = document.getElementById("input").value;
     const array = []
+    const array2 = array.reverse()
     
     
-    for (i=1; i<input; i++){
-        for (i=1; i<=input; i++){
-          cube =  Math.pow([i],3)
-        
-            array.push(cube);
-        }
-       
-    };
+    for (i=1; i<=input; i++){
+      cube =  Math.pow([i],3)
     
-    
-    
-    
+        array.push(cube);
+        document.getElementById("result").innerHTML += `${[i]}<sup>3</sup> =  ${array[i-1]}<br> `
+    }
+               
     
     if (input < 0){
-        for (i=input; i<0; i++){
-            cube =  Math.pow([i],3);
-        
-            array.push(cube);
-        
-        }
+        document.getElementById("result").innerHTML = `Inserisci un numero maggiore di 0 `
     }
-    
-    
-    document.getElementById("result").innerText = array
+        
 
 
 }
